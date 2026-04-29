@@ -1,0 +1,108 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #f0f2f5; /* Màu nền ngoài sáng để nổi bật card */
+    display: flex;
+    justify-content: center; /* Căn giữa card theo chiều ngang */
+    align-items: center;     /* Căn giữa card theo chiều dọc */
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Khung đăng ký - Màu xanh Navy */
+.login-card {
+    background: #1a2a44; /* Màu xanh than */
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+    position: relative; /* Để làm gốc tọa độ cho các phần tử bên trong */
+}
+
+/* Căn lề trái cho nút Quay lại đăng nhập */
+.back-home {
+    display: block;
+    text-align: left; /* Đẩy chữ về bên trái */
+    text-decoration: none;
+    color: #63b3ed;
+    font-size: 13px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.back-home:hover {
+    color: #ffffff;
+}
+
+/* Sticker cuốn sách */
+.sticker-book {
+    width: 65px !important;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Nút Google chuẩn kích thước */
+.google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    background: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #2d3748;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.google-btn img {
+    width: 18px !important; /* Fix lỗi logo to */
+    height: 18px !important;
+}
+
+/* Form nhập liệu */
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: #cbd5e0;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    background: #2d3748;
+    border: 1px solid #4a5568;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+    box-sizing: border-box; /* Không cho input tràn khỏi card */
+}
+
+/* Nút Đăng ký màu xanh nổi bật */
+.login-submit {
+    width: 100%;
+    padding: 12px;
+    background: #3182ce;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}

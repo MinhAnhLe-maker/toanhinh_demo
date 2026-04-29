@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hình Trụ Tròn | Sổ Tay Hình Học</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/information.css" />
+  </head>
+  <body>
+    <div class="back-nav">
+      <a href="../html/detail.html" class="btn-back">
+        <i class="fas fa-arrow-left"></i> Quay lại trang chủ
+      </a>
+    </div>
+
+    <div class="notebook">
+      <div class="nav-controls">
+        <button onclick="changeSlide(-1)" id="prevBtn">
+          <i class="fas fa-chevron-left"></i> Trang trước
+        </button>
+
+        <div class="page-indicator">
+          <i class="fas fa-book-open"></i>
+          <span id="pageNumber">Trang 1/5</span>
+        </div>
+        <button onclick="changeSlide(1)" id="nextBtn">
+          Trang sau <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="pages-container">
+        <section class="slide active">
+          <div class="cover-page">
+            <h1>HÌNH TRỤ TRÒN</h1>
+            <p class="chapter-info">Chương: Hình học trực quan <i class="fas fa-shapes"></i></p>
+            <img src="../hinh-tru-4.jpg" alt="Hình trụ tròn"> 
+            <div class="start-hint">Bấm "Trang sau" để khám phá kiến thức!</div>
+          </div>
+        </section>
+
+        <section class="slide">
+          <div class="content-wrapper concept-container">
+            <div class="concept-visual">
+              <img src="../the-tich-hinh-tru-1.jpg" alt="Sơ đồ hình trụ">
+            </div>
+            <div class="concept-info">
+              <h2><i class="fas fa-database"></i> Khái niệm & Yếu tố</h2>
+              <div class="info-card">
+                <p class="summary"><strong>Hình trụ tròn</strong> được tạo ra khi quay một hình chữ nhật quanh một cạnh cố định của nó.</p>
+                <ul class="element-list">
+                  <li><i class="fas fa-circle"></i> <span><strong>Hai đáy:</strong> Là hai hình tròn bằng nhau và song song.</span></li>
+                  <li><i class="fas fa-arrows-alt-v"></i> <span><strong>Chiều cao (h):</strong> Khoảng cách giữa hai mặt đáy.</span></li>
+                  <li><i class="fas fa-redo"></i> <span><strong>Mặt xung quanh:</strong> Là mặt cong bao quanh khối trụ.</span></li>
+                  <li><i class="fas fa-ruler"></i> <span><strong>Bán kính (r):</strong> Là bán kính của đường tròn đáy.</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide">
+          <div class="content-wrapper">
+            <h2><i class="fas fa-camera"></i> Đồ vật thực tế</h2>
+            <div class="gallery-wrapper">
+              <figure class="gallery-item">
+                <img src="../images (3).jpg" alt="Lon nước">
+                <figcaption>Lon nước giải khát</figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img src="../1.jpg" alt="Lõi giấy vệ sinh">
+                <figcaption>Lõi giấy vệ sinh</figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide">
+          <div class="content-wrapper formula-container">
+            <h2><i class="fas fa-calculator"></i> Công thức hình trụ</h2>
+            <div class="formula-grid">
+              <div class="formula-card area-card">
+                <h3>Diện tích xung quanh</h3>
+                <div class="formula-item">\(S_{xq} = 2\pi r h\)</div>
+                <p class="note">(\(r\): bán kính; \(h\): chiều cao)</p>
+              </div>
+              <div class="formula-card volume-card">
+                <h3>Thể tích (V)</h3>
+                <div class="main-formula">\(V = \pi r^2 h\)</div>
+                <p class="summary">Bằng diện tích đáy nhân với chiều cao.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide">
+          <div class="content-wrapper video-container">
+            <h2><i class="fas fa-play-circle"></i> Video bài giảng</h2>
+            <div class="video-card">
+              <div class="video-frame">
+                <iframe
+    id="lessonVideo"
+    src="https://www.youtube.com/embed/fLPaFsDViJQ?si=XU78Z_XZpHW_HJ5A"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+  >
+  </iframe>
+            </div>
+          </div>
+          <div class="video-desc">
+                <p>
+                  <i class="fas fa-info-circle"></i> Xem video để hiểu rõ hơn về
+                  cách tính diện tích và thể tích hình chóp tam giác đều.
+                </p>
+              </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="../js/information.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  </body>
+</html>

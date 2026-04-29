@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hình Lăng Trụ Đứng | Sổ Tay Hình Học</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/information.css" />
+  </head>
+  <body>
+    <div class="back-nav">
+      <a href="../html/detail.html" class="btn-back">
+        <i class="fas fa-arrow-left"></i> Quay lại trang chủ
+      </a>
+    </div>
+
+    <div class="notebook">
+      <div class="nav-controls">
+        <button onclick="changeSlide(-1)" id="prevBtn">
+          <i class="fas fa-chevron-left"></i> Trang trước
+        </button>
+        <div class="page-indicator">
+          <i class="fas fa-book-open"></i>
+          <span id="pageNumber">Trang 1/5</span>
+        </div>
+        <button onclick="changeSlide(1)" id="nextBtn">
+          Trang sau <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="pages-container">
+        <section class="slide active">
+          <div class="cover-page">
+            <h1>HÌNH LĂNG TRỤ ĐỨNG TAM GIÁC</h1>
+            <p class="chapter-info">
+              Chương: Hình học trực quan <i class="fas fa-shapes"></i>
+            </p>
+            <img
+              src="../trac-nghiem-bai-3-hinh-lang-tru-dung-tam-giac-hinh-lang-tru-dung-tu-giac-151572.png"
+              alt="Hình lăng trụ đứng"
+            />
+            <div class="start-hint">Bấm "Trang sau" để xem chi tiết!</div>
+          </div>
+        </section>
+
+        <section class="slide">
+          <div class="content-wrapper concept-container">
+            <div class="concept-visual">
+              <img src="../images (2).png" alt="Sơ đồ lăng trụ" />
+            </div>
+            <div class="concept-info">
+              <h2><i class="fas fa-cube"></i> Khái niệm & Yếu tố</h2>
+              <div class="info-card">
+                <p class="summary">
+                  <strong>Hình lăng trụ đứng</strong> có hai đáy là các đa giác
+                  bằng nhau và nằm trên hai mặt phẳng song song.
+                </p>
+                <ul class="element-list">
+                  <li>
+                    <i class="fas fa-th-large"></i>
+                    <span
+                      ><strong>Mặt bên:</strong> Đều là các hình chữ nhật.</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-arrows-alt-v"></i>
+                    <span
+                      ><strong>Cạnh bên:</strong> Song song và bằng nhau (là
+                      chiều cao).</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-draw-polygon"></i>
+                    <span
+                      ><strong>Hai đáy:</strong> Là tam giác, tứ giác... bằng
+                      nhau.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide">
+          <div class="content-wrapper">
+            <h2><i class="fas fa-camera"></i> Đồ vật thực tế</h2>
+            <div class="gallery-wrapper">
+              <figure class="gallery-item">
+                <img
+                  src="../pngtree-sliced-__triangular-cream-cake-png-image_4698777.jpg"
+                  alt="Chiếc bánh kem"
+                />
+                <figcaption>Chiếc bánh kem</figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img src="../images (2).jpg" alt="Lịch để bàn" />
+                <figcaption>Lịch để bàn</figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide">
+          <div class="content-wrapper formula-container">
+            <h2><i class="fas fa-calculator"></i> Công thức lăng trụ đứng</h2>
+            <div class="formula-grid">
+              <div class="formula-card area-card">
+                <h3>Diện tích xung quanh</h3>
+                <div class="formula-item">\(S_{xq} = C_{đáy} \cdot h\)</div>
+                <p class="note">(\(C_{đáy}\): chu vi đáy; \(h\): chiều cao)</p>
+              </div>
+              <div class="formula-card volume-card">
+                <h3>Thể tích (V)</h3>
+                <div class="main-formula">\(V = S_{đáy} \cdot h\)</div>
+                <p class="summary">Diện tích đáy nhân với chiều cao.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide">
+          <div class="content-wrapper video-container">
+            <h2><i class="fas fa-play-circle"></i> Video bài giảng</h2>
+            <div class="video-card">
+              <div class="video-frame">
+                <iframe
+                  id="lessonVideo"
+                  src="https://www.youtube.com/embed/JqXBzwRl8c0?si=Z5zjGoQakzFPn1cD"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+              <div class="video-desc">
+                <p>
+                  <i class="fas fa-info-circle"></i> Xem video để hiểu rõ hơn về
+                  cách tính diện tích và thể tích hình hộp chữ nhật.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="../js/information.js"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+    ></script>
+  </body>
+</html>

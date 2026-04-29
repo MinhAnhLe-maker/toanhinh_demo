@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toán Học 247</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="top-nav">
+
+        <div class="nav-container">
+
+            <div class="logo">
+                <img src="https://cdn-icons-png.flaticon.com/512/3413/3413535.png">
+                <span>Math<b class="text-blue">Space</b></span>
+            </div>
+
+            <nav class="menu">
+                <a href="detail.html">Thông tin chi tiết</a>
+                <a href="#">Kiểm tra</a>
+                <a href="#">Dành cho trường học</a>
+            </nav>
+
+            <div class="auth-buttons">
+
+                <div id="logged-out-view" class="auth-flex">
+                    <a href="login.html" class="btn btn-outline">Đăng nhập</a>
+                    <a href="register.html" class="btn btn-fill">Đăng ký</a>
+                </div>
+
+                <div id="logged-in-view"
+                    class="auth-flex"
+                    style="display: none;">
+
+                    <span id="user-name"></span>
+
+                    <button id="logout-btn"
+                        class="btn btn-outline">
+                        Đăng xuất
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- HERO -->
+    <section class="hero-banner">
+
+        <div class="hero-content">
+
+            <h1>Biến Toán Hình thành điều đơn giản</h1>
+
+            <p>Khám phá sức mạnh của hình học</p>
+
+            <button class="btn btn-large"
+                onclick="document.querySelector('.grid-container').scrollIntoView({behavior:'smooth'})">
+
+                Bắt đầu học ngay
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- CARDS -->
+    <main class="grid-container">
+
+        <!-- HÌNH TRÒN -->
+        <div class="card"
+            onclick="playVideo(this,'cTS5KHiE91M')">
+
+            <div class="card-inner">
+                <div class="icon circle"></div>
+                <h2>Hình Tròn</h2>
+            </div>
+
+            <div class="video-target"></div>
+
+        </div>
+
+<!-- TAM GIÁC -->
+<div class="card"
+    onclick="playVideo(this,'W3UzjLDA6M4')">
+
+    <div class="card-inner">
+        <div class="icon triangle"></div>
+        <h2>Hình Tam Giác</h2>
+    </div>
+
+    <div class="video-target"></div>
+
+</div>
+
+<!-- HÌNH VUÔNG -->
+<div class="card"
+    onclick="playVideo(this,'W3UzjLDA6M4')">
+
+    <div class="card-inner">
+        <div class="icon cube"></div>
+        <h2>Hình Vuông</h2>
+    </div>
+
+    <div class="video-target"></div>
+
+</div>
+
+
+    </main>
+
+    <script type="module" src="../js/script.js"></script>
+
+</body>
+</html>
+

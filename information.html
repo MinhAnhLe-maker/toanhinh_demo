@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sổ Tay Hình Học | Toán 247</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/information.css" />
+  </head>
+  <body>
+    <div class="back-nav">
+      <a href="../html/detail.html" class="btn-back">
+        <i class="fas fa-arrow-left"></i> Quay lại trang chủ
+      </a>
+    </div>
+
+    <div class="notebook">
+      <div class="nav-controls">
+        <button onclick="changeSlide(-1)" id="prevBtn">
+          <i class="fas fa-chevron-left"></i> Trang trước
+        </button>
+        <div class="page-indicator">
+          <i class="fas fa-book-open"></i>
+          <span id="pageNumber">Trang 1/5</span>
+        </div>
+        <button onclick="changeSlide(1)" id="nextBtn">
+          Trang sau <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="pages-container">
+        <section class="slide active">
+          <div class="cover-page">
+            <h1 id="shapeTitle">Hình hộp chữ nhật</h1>
+            <p class="chapter-info">
+              Chương: Hình học trực quan <i class="fas fa-shapes"></i>
+            </p>
+            <img src="../download.png" alt="" />
+            <div class="start-hint">Bấm "Trang sau" để khám phá kiến thức!</div>
+          </div>
+        </section>
+
+        <section class="slide">
+          <div class="content-wrapper concept-container">
+            <div class="concept-visual">
+              <img src="../images.png" alt="Sơ đồ hình hộp chữ nhật" />
+            </div>
+
+            <div class="concept-info">
+              <h2><i class="fas fa-cube"></i> Khái niệm & Yếu tố</h2>
+
+              <div class="info-card">
+                <p class="summary">
+                  <strong>Hình hộp chữ nhật</strong> là khối đa diện có
+                  <strong>6 mặt</strong> đều là hình chữ nhật.
+                </p>
+
+                <ul class="element-list">
+                  <li>
+                    <i class="fas fa-dot-circle"></i>
+                    <span
+                      ><strong>8 đỉnh:</strong> Là các điểm giao nhau của 3 cạnh
+                      (ví dụ: Đỉnh A, B, C...).</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-arrows-alt-h"></i>
+                    <span
+                      ><strong>12 cạnh:</strong> Gồm các cặp cạnh song song và
+                      bằng nhau (Chiều dài, rộng, cao).</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-th-large"></i>
+                    <span
+                      ><strong>6 mặt:</strong> Gồm 2 mặt đáy và 4 mặt bên đối
+                      diện song song với nhau.</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-draw-polygon"></i>
+                    <span
+                      ><strong>Góc:</strong> Tại mỗi đỉnh có các góc vuông giữa
+                      các cạnh kề nhau.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide">
+          <div class="content-wrapper">
+            <h2><i class="fas fa-camera"></i> Đồ vật thực tế</h2>
+
+            <div id="realLifeGallery" class="gallery-wrapper">
+              <figure class="gallery-item">
+                <img src="../hop-qua-hinh-vuong-2-1.jpg" alt="Hộp quà " />
+                <figcaption>Hộp quà (dạng hình hộp chữ nhật)</figcaption>
+              </figure>
+
+              <figure class="gallery-item">
+                <img src="../images.jpg" alt="Cuốn sách Toán 7" />
+                <figcaption>
+                  Hộp đựng khăn giấy (dạng hình hộp chữ nhật)
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide">
+          <div class="content-wrapper formula-container">
+            <h2><i class="fas fa-calculator"></i> Công thức tính toán</h2>
+
+            <div class="formula-grid">
+              <div class="formula-card area-card">
+                <h3><i class="fas fa-layer-group"></i> Diện tích (S)</h3>
+                <div class="formula-item">
+                  \(S_{xq} = 2 \cdot (a + b) \cdot h\)
+                </div>
+                <div class="formula-item">
+                  \(S_{tp} = S_{xq} + 2 \cdot a \cdot b\)
+                </div>
+                <p class="note">(\(a, b\): cạnh đáy; \(h\): chiều cao)</p>
+              </div>
+
+              <div class="formula-card volume-card">
+                <h3><i class="fas fa-cube"></i> Thể tích (V)</h3>
+                <div class="main-formula">\(V = a \cdot b \cdot h\)</div>
+                <p class="summary">
+                  Bằng diện tích đáy nhân với chiều cao tương ứng.
+                </p>
+              </div>
+            </div>
+
+            <div class="formula-footer">
+              <div class="badge">
+                <i class="fas fa-ruler-horizontal"></i>
+                <strong>Chu vi đáy:</strong> \(C = 2 \cdot (a + b)\)
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide">
+          <div class="content-wrapper video-container">
+            <h2><i class="fas fa-play-circle"></i> Video bài giảng</h2>
+
+            <div class="video-card">
+              <div class="video-frame">
+                <iframe
+                  id="lessonVideo"
+                  src="https://www.youtube.com/embed/eFbWUAw4Ae8"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+              <div class="video-desc">
+                <p>
+                  <i class="fas fa-info-circle"></i> Xem video để hiểu rõ hơn về
+                  cách tính diện tích và thể tích hình hộp chữ nhật.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="../js/information.js"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+    ></script>
+  </body>
+</html>

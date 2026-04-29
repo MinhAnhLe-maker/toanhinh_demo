@@ -1,0 +1,213 @@
+/* Container chứa nút để căn vị trí chuẩn */
+.top-nav {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    z-index: 100;
+}
+
+/* Thiết kế nút quay lại kiểu hiện đại */
+.btn-back-home {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 22px;
+    background: #ffffff;
+    color: #1e293b !important; /* Màu chữ xanh đen sang trọng */
+    text-decoration: none !important; /* Xóa gạch chân tuyệt đối */
+    border-radius: 50px; /* Bo tròn hoàn toàn nhìn rất mướt */
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1.5px solid #e2e8f0; /* Viền mảnh tinh tế */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Đổ bóng nhẹ */
+}
+
+/* Icon mũi tên */
+.btn-back-home i {
+    font-size: 0.8rem;
+    color: #00adef; /* Điểm nhấn màu xanh thương hiệu của bạn */
+    transition: transform 0.3s ease;
+}
+
+/* Hiệu ứng khi di chuột vào (Hover) */
+.btn-back-home:hover {
+    background: #00adef; /* Đổi nền sang xanh dương */
+    color: white !important;
+    border-color: #00adef;
+    transform: translateX(-5px); /* Nhích nhẹ sang trái tạo cảm giác "quay về" */
+    box-shadow: 0 8px 20px rgba(0, 173, 239, 0.25);
+}
+
+/* Khi hover thì icon cũng đổi màu trắng cho đồng bộ */
+.btn-back-home:hover i {
+    color: white;
+    transform: translateX(-3px);
+}
+/* Thiết lập cơ bản */
+body {
+    background-color: #f1f5f9; /* Màu nền xám nhạt hiện đại hơn */
+    font-family: 'Lexend', sans-serif; /* Font chữ xịn xò */
+    margin: 0;
+    padding: 0;
+    color: #1e293b;
+}
+
+.main-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+/* Thiết kế Header */
+.main-header {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.main-header::after { /* Đường kẻ gạch dưới tiêu đề cho sang */
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #00adef;
+    border-radius: 2px;
+    margin: 20px auto;
+}
+
+.main-header h1 {
+    font-size: 48px;
+    color: #0f172a;
+    margin: 10px 0;
+    letter-spacing: -1px;
+}
+
+.main-header .highlight {
+    color: #00adef; /* Màu xanh đặc trưng */
+}
+
+.main-header p {
+    font-size: 19px;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Lưới các ô bài giảng (Grid) */
+.geometry-grid {
+    display: grid;
+    /* Tự động chia 3 cột (nếu màn hình đủ rộng), mỗi ô tối thiểu 300px */
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px; /* Khoảng cách giữa các ô */
+}
+
+/* Thiết kế từng cái Card */
+.lesson-card {
+    background-color: #ffffff;
+    border-radius: 24px; /* Bo góc tròn hơn */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s ease; /* Hiệu ứng mượt mà */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04); /* Đổ bóng nhẹ */
+    border: 1px solid #e2e8f0; /* Viền rất nhẹ */
+}
+
+/* Hiệu ứng di chuột */
+.lesson-card:hover {
+    background-color: #f8fafc;
+    transform: translateY(-10px); /* Nhích lên trên */
+    box-shadow: 0 20px 40px rgba(0, 173, 239, 0.15); /* Đổ bóng xanh Cyan */
+    border-color: #00adef; /* Viền đổi sang màu xanh */
+}
+
+/* Vùng chứa ảnh */
+.card-image {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ảnh không bị méo */
+    transition: transform 0.3s ease;
+}
+
+/* Hiệu ứng ảnh khi di chuột */
+.lesson-card:hover .card-image img {
+    transform: scale(1.1); /* Phóng to ảnh nhẹ */
+}
+
+/* Tiêu đề ô */
+.lesson-card h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #0f172a;
+    font-weight: 700;
+}
+
+/* Đoạn mô tả ô */
+.lesson-card p {
+    font-size: 15px;
+    color: #718096;
+    margin: 0 0 25px 0;
+    line-height: 1.5;
+    flex-grow: 1; /* Để nút Xem ngay luôn nằm ở dưới cùng ô */
+}
+
+/* Nút Xem ngay */
+.view-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #00adef; /* Màu xanhCyan */
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.view-btn:hover {
+    background-color: #008fca; /* Xanh đậm hơn khi di chuột */
+}
+
+/* Responsive cho điện thoại */
+@media (max-width: 768px) {
+    .main-wrapper {
+        padding: 40px 15px;
+    }
+    .main-header h1 {
+        font-size: 36px;
+    }
+    .main-header p {
+        font-size: 17px;
+    }
+    .geometry-grid {
+        grid-template-columns: 1fr; /* 1 cột trên điện thoại */
+    }
+}
+/* 1. Xóa gạch chân cho tất cả các liên kết bài học */
+a.lesson-card {
+    text-decoration: none !important;
+    color: inherit; /* Giữ nguyên màu chữ gốc, không bị đổi sang xanh/tím */
+    
+}
+
+
+
